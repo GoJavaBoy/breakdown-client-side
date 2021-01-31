@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Pranešti apie transporto priemonės gedimą</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+          integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="/static/style.css"/>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <script
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC4aUoG-515_h5Mto9oGLZwCiPgtIFpPQU&callback&callback=initAutocomplete&libraries=places&v=weekly"
+            defer
+    ></script>
+    <script type="text/javascript" src="/static/places.js"></script>
+    <script type="text/javascript" src="/static/util.js"></script>
+    <script>
+        console.info("user_id: " + localStorage.getItem("user_id"));
+        if (performance.navigation.type === performance.navigation.TYPE_RELOAD
+            || localStorage.getItem("user_id") === null) {
+            console.info("This page is reloaded");
+            window.location.replace("http://localhost:8080/");
+        }
+    </script>
+</head>
+<body>
+<div ng-app="brk-app">
+    <header>
+        <div class="brand">
+            <div id="logo"></div>
+            <div class="brokendown">Pagalba kelyje</div>
+            <div class="steps-indicator ng-scope" ng-if="ctrl.showSteps()">
+                <a class="pointer ng-binding" ng-click="ctrl.toggleStepsVisiblity()"
+                   ng-class="{'active':ctrl.getStepsVisiblity()}" data-di-id="di-id-90b1ccb4-78094daf" style="">
+                    Žingsnis
+                    <span class="cur-step ng-binding">2</span>
+                    <span class="step-amt">iš</span>
+                    5
+                </a>
+            </div>
+        </div>
+        <div class="progress">
+            <div class="progress-bar" style="width: 40%;"></div>
+        </div>
+        <div class="nav-wizWrap mobile-view">
+            <ul class="nav-wizard">
+                <li class="pointer ng-binding ng-scope completed" data-getmenuindex="1" style="">
+                    Saugumas
+                </li>
+                <li class="pointer ng-binding ng-scope active" data-getmenuindex="2" style="">
+                    Buvimo vieta
+                </li>
+                <li class="pointer ng-binding ng-scope inactive" data-getmenuindex="3" style="">
+                    Transporto priemonė
+                </li>
+                <li class="pointer ng-binding ng-scope inactive" data-getmenuindex="4" style="">
+                    Problema
+                </li>
+                <li class="pointer ng-binding ng-scope inactive" data-getmenuindex="5" style="">
+                    Detalės
+                </li>
+            </ul>
+        </div>
+    </header>
+    <div class="uiview ng-scope forward">
+        <div class="container-fluid content ng-scope" id="container-wrap">
+            <div class="box address_manual">
+                <div class="row">
+                    <div class="col-md-12 col-xs-12">
+                        <h1 class="ng-binding">Įveskite adresą</h1>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 col-xs-12">
+                        <div class="form-group">
+                            <div class="btn-group dropdown" style="width:100%">
+                                <form method="post" action="/is_it_right_address">
+                                    <label for="pac-input" class="control-label ng-binding">Pasinaudokite paieška ir
+                                        pabandykite rasti jūsų buvimo vietą</label>
+                                    <input
+                                            id="pac-input"
+                                            class="form-control brk-text-box ng-pristine ng-untouched ng-isolate-scope ng-scope ng-empty ng-valid-required ng-valid-maxlength ng-valid"
+                                            type="text"
+                                            placeholder="Įveskite adresą"
+                                    />
+                                    <div class="row">
+                                        <div class="col-md-12 col-xs-12">
+                                            <button type="submit"
+                                                    class="btn-start btn-full-width user-details-btn ng-scope"
+                                                    btn-behaviour>
+                                                Patvirtinti
+                                            </button>
+                                        </div>
+                                        <div class="col-md-12 col-xs-12 address-row">
+                                            <p>
+                                                <a href="vehicle_details" class="ng-binding">Nėra sąraše?</a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid report-footer">
+                <div class="row">
+                    <button class="prev ng-scope" onclick="rightUrl()">
+                        <img alt src="/static/images/backBtn.png">
+                        <span>Atgal</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
