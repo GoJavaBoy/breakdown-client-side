@@ -673,6 +673,10 @@ btn-group-vertical > .btn-group:after, .btn-toolbar:after, .clearfix:after, .con
     border-bottom: solid 1px #c7c8ca;
 }
 
+.col-xs-6 {
+    width: 50%;
+}
+
 .form-group label {
     font-weight: normal;
     margin-bottom: 10px;
