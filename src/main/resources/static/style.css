@@ -29,18 +29,22 @@ h1, h2, p {
 .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
     font-weight: inherit;
 }
+
 .col-xs-6 {
     width: 50%;
 }
- .col-xs-1, .col-xs-10, .col-xs-11, .col-xs-12, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9 {
-     float: left;
- }
- .col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-xs-1, .col-xs-10, .col-xs-11, .col-xs-12, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9 {
-     position: relative;
-     min-height: 1px;
-     padding-right: 15px;
-     padding-left: 15px;
- }
+
+.col-xs-1, .col-xs-10, .col-xs-11, .col-xs-12, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9 {
+    float: left;
+}
+
+.col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-xs-1, .col-xs-10, .col-xs-11, .col-xs-12, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
 svg {
     display: block;
 }
@@ -64,6 +68,7 @@ a:focus, a:visited, a:active {
     font-weight: normal;
     font-style: normal;
 }
+
 @font-face {
     font-family: "NewTransport-Italic";
     src: url("../fonts/NewTransportAA-Italic.eot");
@@ -72,6 +77,7 @@ a:focus, a:visited, a:active {
     font-weight: normal;
     font-style: normal;
 }
+
 @font-face {
     font-family: "NewTransport-Light";
     src: url("../fonts/NewTransportAA-Light.eot");
@@ -80,6 +86,7 @@ a:focus, a:visited, a:active {
     font-weight: normal;
     font-style: normal;
 }
+
 @font-face {
     font-family: "NewTransport-Regular";
     src: url("../fonts/NewTransportAA-Regular.eot");
@@ -88,6 +95,7 @@ a:focus, a:visited, a:active {
     font-weight: normal;
     font-style: normal;
 }
+
 .container-fluid {
     padding-left: 10px;
     padding-right: 10px;
@@ -112,6 +120,7 @@ a:focus, a:visited, a:active {
         padding-top: 50px;
     }
 }
+
 @media screen and (min-width: 738px) {
     .progress {
         display: none;
@@ -121,6 +130,7 @@ a:focus, a:visited, a:active {
         padding-top: 111px;
     }
 }
+
 h1, h2, h3, h4, h5, h6 {
     margin-top: 0;
     font-family: "NewTransport-Bold";
@@ -283,6 +293,7 @@ header h1.page-title {
         display: none;
     }
 }
+
 @media screen and (max-width: 737px) {
     .steps-nav {
         width: 100%;
@@ -432,6 +443,7 @@ header h1.page-title {
         background-image: url(../images/step-navigation-arrow-x2.png);
     }
 }
+
 .box a {
     color: #06757f;
     font-weight: bold;
@@ -608,6 +620,18 @@ a.btn-full-width {
     padding: 0 5px 0 5px;
 }
 
+@media (min-width: 992px) {
+    .col-md-6 {
+        width: 50%;
+    }
+}
+
+@media (min-width: 992px) {
+    .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9 {
+        float: left;
+    }
+}
+
 .row.formRow.confirmation-box {
     margin-left: -5px;
     margin-right: -5px;
@@ -616,19 +640,24 @@ a.btn-full-width {
 .btn-start {
     margin: 8px 0;
 }
-btn-group-vertical>.btn-group:after, .btn-toolbar:after, .clearfix:after, .container-fluid:after, .container:after, .dl-horizontal dd:after, .form-horizontal .form-group:after, .modal-footer:after, .modal-header:after, .nav:after, .navbar-collapse:after, .navbar-header:after, .navbar:after, .pager:after, .panel-body:after, .row:after {
+
+btn-group-vertical > .btn-group:after, .btn-toolbar:after, .clearfix:after, .container-fluid:after, .container:after, .dl-horizontal dd:after, .form-horizontal .form-group:after, .modal-footer:after, .modal-header:after, .nav:after, .navbar-collapse:after, .navbar-header:after, .navbar:after, .pager:after, .panel-body:after, .row:after {
     clear: both;
 }
-.btn-group-vertical>.btn-group:after, .btn-group-vertical>.btn-group:before, .btn-toolbar:after, .btn-toolbar:before, .clearfix:after, .clearfix:before, .container-fluid:after, .container-fluid:before, .container:after, .container:before, .dl-horizontal dd:after, .dl-horizontal dd:before, .form-horizontal .form-group:after, .form-horizontal .form-group:before, .modal-footer:after, .modal-footer:before, .modal-header:after, .modal-header:before, .nav:after, .nav:before, .navbar-collapse:after, .navbar-collapse:before, .navbar-header:after, .navbar-header:before, .navbar:after, .navbar:before, .pager:after, .pager:before, .panel-body:after, .panel-body:before, .row:after, .row:before {
+
+.btn-group-vertical > .btn-group:after, .btn-group-vertical > .btn-group:before, .btn-toolbar:after, .btn-toolbar:before, .clearfix:after, .clearfix:before, .container-fluid:after, .container-fluid:before, .container:after, .container:before, .dl-horizontal dd:after, .dl-horizontal dd:before, .form-horizontal .form-group:after, .form-horizontal .form-group:before, .modal-footer:after, .modal-footer:before, .modal-header:after, .modal-header:before, .nav:after, .nav:before, .navbar-collapse:after, .navbar-collapse:before, .navbar-header:after, .navbar-header:before, .navbar:after, .navbar:before, .pager:after, .pager:before, .panel-body:after, .panel-body:before, .row:after, .row:before {
     display: table;
     content: " ";
 }
+
 .btn-group.dropdown .btn-default {
     text-align: left;
 }
-.btn-group>.btn:first-child {
+
+.btn-group > .btn:first-child {
     margin-left: 0px;
 }
+
 #pac-input, #number-plate, #vehicle-color, #vehicle-maker, #vehicle-model, #first-name, #phone-number {
     font-size: 14px;
     width: 100%;
@@ -636,6 +665,7 @@ btn-group-vertical>.btn-group:after, .btn-toolbar:after, .clearfix:after, .conta
     font-family: Arial, Helvetica, Verdana, sans-serif;
     margin-bottom: 10px;
 }
+
 #map {
     width: 100%;
     height: 212px;
@@ -650,6 +680,7 @@ btn-group-vertical>.btn-group:after, .btn-toolbar:after, .clearfix:after, .conta
     font-family: "NewTransport-Regular", Arial, Helvetica, Verdana, sans-serif;
     color: #1d1d1d;
 }
+
 .form-control {
     font-size: 1.6rem;
 }
@@ -673,9 +704,11 @@ btn-group-vertical>.btn-group:after, .btn-toolbar:after, .clearfix:after, .conta
     -o-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
     transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
 }
+
 .btn-group, .btn-group-vertical {
     display: inline-block;
 }
+
 .form-group input.form-control:focus {
     -moz-box-shadow: inset 0 0 1px 2px #fbc400, 0 0 2px 1px rgba(167, 169, 172, 0);
     -webkit-box-shadow: inset 0 0 1px 2px #fbc400, 0 0 2px 1px rgba(167, 169, 172, 0);
@@ -717,6 +750,7 @@ btn-group-vertical>.btn-group:after, .btn-toolbar:after, .clearfix:after, .conta
     width: 100%;
     background-color: transparent;
 }
+
 .col-xs-12 {
     width: 100%;
 }
@@ -828,6 +862,7 @@ btn-group-vertical>.btn-group:after, .btn-toolbar:after, .clearfix:after, .conta
     margin-left: 0;
     margin-right: 0;
 }
+
 .row.formRow2 {
     margin-left: -7px;
     margin-right: 0;
@@ -873,6 +908,7 @@ btn-group-vertical>.btn-group:after, .btn-toolbar:after, .clearfix:after, .conta
         background-size: 88px 44px;
     }
 }
+
 .loc-Postcode-text p {
     font-family: Arial;
     font-size: 14px;
@@ -1319,6 +1355,7 @@ ul.nav-wizard.nav-wizard-backnav .active ~ li a:active, ul.nav-wizard.nav-wizard
         height: 60px;
     }
 }
+
 @media screen and (max-width: 880px) {
     .desktop-tablet-view {
         display: none;
@@ -1343,6 +1380,7 @@ ul.nav-wizard.nav-wizard-backnav .active ~ li a:active, ul.nav-wizard.nav-wizard
         line-height: 18px;
     }
 }
+
 @media screen and (max-width: 737px) {
     .box {
         border: 0;
@@ -1391,6 +1429,7 @@ ul.nav-wizard.nav-wizard-backnav .active ~ li a:active, ul.nav-wizard.nav-wizard
         margin-left: 24px;
     }
 }
+
 .box.box-with-map {
     padding: 24px 0 8px 0;
 }
@@ -1497,9 +1536,11 @@ li {
     margin-bottom: 13px;
     color: #2b2d32;
 }
+
 .safety-advice-text .text-style-1 {
     font-weight: bold;
 }
+
 .safety-advice-text .text-style-2 {
     font-weight: bold;
     color: #06757f;
@@ -1653,6 +1694,7 @@ li {
         margin: 16px 0 0 0;
     }
 }
+
 @media screen and (max-width: 737px) {
     .safety-advice-text {
         font-size: 14px;
@@ -1701,6 +1743,7 @@ li {
         pointer-events: all;
     }
 }
+
 .radio-label-on {
     font-weight: bold !important;
 }
@@ -2012,6 +2055,7 @@ form {
         margin: 16px 0 0 0;
     }
 }
+
 @media screen and (max-width: 737px) {
     .safety-page ul li {
         padding-left: 21px;
@@ -2051,6 +2095,7 @@ form {
         pointer-events: all;
     }
 }
+
 .brokendown {
     margin-left: 150px;
     line-height: 48px;
@@ -2072,6 +2117,7 @@ form {
         line-height: 48px;
     }
 }
+
 /*added for the css update 16aug19*/
 /*user details form*/
 #container-userdetails input.form-control {
@@ -2081,6 +2127,7 @@ form {
 #container-userdetails textarea.form-control {
     max-width: 360px;
 }
+
 textarea.form-control {
     height: 130px;
     resize: none;
@@ -2166,6 +2213,7 @@ textarea.form-control {
         display: inline;
     }
 }
+
 @media screen and (max-width: 737px) {
     #container-userdetails input.form-control {
         max-width: 100%;
@@ -2256,6 +2304,7 @@ textarea.form-control {
         margin: 24px 0 16px;
     }
 }
+
 .checkbox-row {
     display: table;
     width: 100%;
@@ -2421,6 +2470,7 @@ textarea.form-control {
         color: #1d1d1d;
     }
 }
+
 /*newly added*/
 .map-info-text {
     display: block;
@@ -2492,6 +2542,7 @@ textarea.form-control {
         padding: 0;
     }
 }
+
 /*uber-number plate form*/
 .plateLookUp label.control-label {
     margin-bottom: 8px;
@@ -2614,23 +2665,28 @@ textarea.form-control {
         display: none;
     }
 }
+
 .btn-check {
     position: absolute;
-    clip: rect(0,0,0,0);
+    clip: rect(0, 0, 0, 0);
     pointer-events: none;
 }
-.btn-check:active+.btn-outline-primary, .btn-check:checked+.btn-outline-primary, .btn-outline-primary.active, .btn-outline-primary.dropdown-toggle.show, .btn-outline-primary:active {
+
+.btn-check:active + .btn-outline-primary, .btn-check:checked + .btn-outline-primary, .btn-outline-primary.active, .btn-outline-primary.dropdown-toggle.show, .btn-outline-primary:active {
     color: #fff;
     background-color: #0d6efd;
     border-color: #0d6efd;
 }
-.bd-example>.btn, .bd-example>.btn-group {
+
+.bd-example > .btn, .bd-example > .btn-group {
     margin: .25rem .125rem;
 }
+
 .btn-outline-primary {
     color: #0d6efd;
     border-color: #0d6efd;
 }
+
 .vehicle-prob-box label {
     border-radius: 5px;
     background-color: #fff;
