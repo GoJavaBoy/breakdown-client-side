@@ -98,7 +98,7 @@ function getPersonalDetails() {
 
     $(document).ready(function() {
     function progress(timeleft, timetotal, $element) {
-        var progressBarWidth = (timeleft / timetotal) * $element.width();
+        var progressBarWidth = timeleft * $element.width() / timetotal;
         $element.find('div').animate({ width: progressBarWidth }, timeleft === timetotal ? 0 : 1000, 'linear').html("paskambinsime po " + timeleft);
         if(timeleft > 0) {
             setTimeout(function() {

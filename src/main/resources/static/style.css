@@ -2351,6 +2351,7 @@ form {
 /*info icons*/
 .input-info-inline {
     font-family: "NewTransport-Italic", Arial, Helvetica, Verdana, sans-serif;
+    font-style: italic;
     font-size: 14px;
     line-height: 20px;
     color: #1d1d1d;
