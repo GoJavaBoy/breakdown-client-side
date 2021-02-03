@@ -1757,7 +1757,7 @@ form {
 .btn-group.dropdown {
     background: #fff;
     font-size: 16px;
-    box-shadow: 0 0 4px 0 rgba(167, 169, 172, 0.32);
+    /*box-shadow: 0 0 4px 0 rgba(167, 169, 172, 0.32);*/
     -webkit-border-radius: 4px;
     border-radius: 4px;
     font-weight: normal;
@@ -2317,6 +2317,35 @@ form {
 
 .mb-styled-checkbox:checked + label + div {
     display: block;
+}
+
+.vehicle-prob-box label {
+    border-radius: 5px;
+    background-color: #fff;
+    border: solid 1px #1d1d1d;
+    letter-spacing: -0.23px;
+    font-size: 14px;
+    text-align: center;
+    color: #1d1d1d;
+    line-height: normal;
+    font-weight: normal;
+    padding: 10px 12px;
+    min-width: 60px;
+    white-space: nowrap;
+    margin: 8px;
+    float: left;
+    width: auto;
+}
+.btn-check {
+    position: absolute;
+    clip: rect(0, 0, 0, 0);
+    pointer-events: none;
+}
+
+.btn-check:active + .btn-outline-primary, .btn-check:checked + .btn-outline-primary, .btn-outline-primary.active, .btn-outline-primary.dropdown-toggle.show, .btn-outline-primary:active {
+    color: #fff;
+    background-color: #0d6efd;
+    border-color: #0d6efd;
 }
 
 /*info icons*/
