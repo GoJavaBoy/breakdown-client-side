@@ -20,7 +20,7 @@
         if (performance.navigation.type === performance.navigation.TYPE_RELOAD
             || localStorage.getItem("user_id") === null) {
             console.info("This page is reloaded");
-            window.location.replace("http://localhost:8080/");
+            window.location.replace(window.location.origin);
         }
         localStorage.removeItem("do_you_know_address_visit");
     </script>

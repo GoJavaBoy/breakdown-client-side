@@ -10,18 +10,12 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script type="text/javascript" src="/static/util.js"></script>
     <script>
-        if (localStorage.length>0){
-            console.log(localStorage);
-            localStorage.clear();
-        }
-        user_id = Number(Math.random() * 1000);
-        console.log("user_id: " + user_id);
-        localStorage.setItem("user_id", user_id);
-        if (performance.navigation.type === performance.navigation.TYPE_RELOAD) {
-            localStorage.clear();
+        if (performance.navigation.type === performance.navigation.TYPE_RELOAD
+            || localStorage.getItem("user_id") === null) {
             console.info("This page is reloaded");
-            window.location.replace("http://localhost:8080/");
+            window.location.replace(window.location.origin);
         }
+        console.log(localStorage);
     </script>
 </head>
 <body>
