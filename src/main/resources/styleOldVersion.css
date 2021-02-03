@@ -1470,7 +1470,7 @@ ul.nav-wizard.nav-wizard-backnav .active ~ li a:active, ul.nav-wizard.nav-wizard
     display: inline-block;
     width: 100%;
     min-height: 24px;
-    background-image: url(images/car-pin.svg);
+    background-image: url(static/images/car-pin.svg);
     background-repeat: no-repeat;
     background-size: 24px 24px;
     background-position: 0 0;
@@ -1480,7 +1480,7 @@ ul.nav-wizard.nav-wizard-backnav .active ~ li a:active, ul.nav-wizard.nav-wizard
     display: inline-block;
     width: 100%;
     min-height: 24px;
-    background-image: url(images/target.svg);
+    background-image: url(static/images/target.svg);
     background-repeat: no-repeat;
     background-size: 24px 24px;
     background-position: 0 0;
@@ -1513,7 +1513,7 @@ ul.nav-wizard.nav-wizard-backnav .active ~ li a:active, ul.nav-wizard.nav-wizard
 }
 
 .hidden-image {
-    background-image: url("images/backBtn.png");
+    background-image: url("static/images/backBtn.png");
     display: none;
 }
 
@@ -2395,7 +2395,7 @@ textarea.form-control {
     display: inline-block;
     width: 16px;
     height: 16px;
-    background: url(images/info-icon.svg) no-repeat left center;
+    background: url(static/images/info-icon.svg) no-repeat left center;
     background-size: contain;
     position: relative;
     top: 2px;
@@ -2476,7 +2476,7 @@ textarea.form-control {
     display: block;
     margin-left: 50px;
     padding-left: 22px;
-    background-image: url(images/map-info.svg);
+    background-image: url(static/images/map-info.svg);
     background-size: 16px 16px;
     background-repeat: no-repeat;
     background-position: 0 2px;
