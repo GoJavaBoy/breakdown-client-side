@@ -12,8 +12,6 @@ body {
     color: #000;
     background-color: #f1f1f1;
     height: 100%;
-    font-size: 14px;
-    line-height: 1.42857143;
 }
 
 body > div {
@@ -28,21 +26,6 @@ h1, h2, p {
 
 .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
     font-weight: inherit;
-}
-
-.col-xs-6 {
-    width: 50%;
-}
-
-.col-xs-1, .col-xs-10, .col-xs-11, .col-xs-12, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9 {
-    float: left;
-}
-
-.col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-xs-1, .col-xs-10, .col-xs-11, .col-xs-12, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9 {
-    position: relative;
-    min-height: 1px;
-    padding-right: 15px;
-    padding-left: 15px;
 }
 
 svg {
@@ -147,7 +130,6 @@ p {
 
 h1 {
     font-size: 24px;
-    font-weight: bold;
     line-height: 28px;
     letter-spacing: -0.25px;
     text-align: left;
@@ -172,7 +154,6 @@ header h1 {
     margin-top: 0;
     margin-bottom: 0;
     font-family: "NewTransport-Bold", Arial, Helvetica, Verdana, sans-serif;
-    font-weight: bold;
 }
 
 .normal {
@@ -208,7 +189,7 @@ header h1.page-title {
 #logo {
     position: absolute;
     z-index: 2;
-    background: url(/static/images/logo4.png);
+    background: url(../images/logo.png);
     background-repeat: no-repeat;
     background-size: 178px;
     background-position-x: -92px;
@@ -310,12 +291,11 @@ header h1.page-title {
     }
 
     .steps-indicator a {
-        font-size: 13px;
-        font-weight: bold;
+        font-size: 16px;
         color: #1d1d1d;
         letter-spacing: -0.25px;
         line-height: 24px;
-        padding-right: 0px;
+        padding-right: 30px;
         display: block;
         position: relative;
         font-family: "NewTransport-Bold", Arial, Helvetica, Verdana, sans-serif;
@@ -497,7 +477,6 @@ box a:hover, box a:visited {
     background-image: linear-gradient(to bottom, #fc0, #f9b800) !important;
     box-shadow: inset 0 1px 1px #fff, 0px 1px 2px rgba(147, 149, 152, 0.5);
     font-family: "NewTransport-bold", Arial, Helvetica, Verdana, sans-serif;
-    font-weight: bold;
     background-color: #fc0;
     border-color: #fc0;
 }
@@ -548,7 +527,6 @@ a.btn-full-width {
     line-height: 20px;
     border-radius: 5px;
     font-family: "NewTransport-bold", Arial, Helvetica, Verdana, sans-serif;
-    font-weight: bold;
     -moz-box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.3);
     -webkit-box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.3);
     background: transparent;
@@ -598,7 +576,6 @@ a.btn-full-width {
     background: #fff;
     border: solid 2px #1d1d1d;
     font-family: "NewTransport-bold", Arial, Helvetica, Verdana, sans-serif;
-    font-weight: bold;
     font-size: 18px;
     line-height: 44px;
     text-align: center;
@@ -620,18 +597,6 @@ a.btn-full-width {
     padding: 0 5px 0 5px;
 }
 
-@media (min-width: 992px) {
-    .col-md-6 {
-        width: 50%;
-    }
-}
-
-@media (min-width: 992px) {
-    .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9 {
-        float: left;
-    }
-}
-
 .row.formRow.confirmation-box {
     margin-left: -5px;
     margin-right: -5px;
@@ -639,31 +604,6 @@ a.btn-full-width {
 
 .btn-start {
     margin: 8px 0;
-}
-
-btn-group-vertical > .btn-group:after, .btn-toolbar:after, .clearfix:after, .container-fluid:after, .container:after, .dl-horizontal dd:after, .form-horizontal .form-group:after, .modal-footer:after, .modal-header:after, .nav:after, .navbar-collapse:after, .navbar-header:after, .navbar:after, .pager:after, .panel-body:after, .row:after {
-    clear: both;
-}
-
-.btn-group-vertical > .btn-group:after, .btn-group-vertical > .btn-group:before, .btn-toolbar:after, .btn-toolbar:before, .clearfix:after, .clearfix:before, .container-fluid:after, .container-fluid:before, .container:after, .container:before, .dl-horizontal dd:after, .dl-horizontal dd:before, .form-horizontal .form-group:after, .form-horizontal .form-group:before, .modal-footer:after, .modal-footer:before, .modal-header:after, .modal-header:before, .nav:after, .nav:before, .navbar-collapse:after, .navbar-collapse:before, .navbar-header:after, .navbar-header:before, .navbar:after, .navbar:before, .pager:after, .pager:before, .panel-body:after, .panel-body:before, .row:after, .row:before {
-    display: table;
-    content: " ";
-}
-
-.btn-group.dropdown .btn-default {
-    text-align: left;
-}
-
-.btn-group > .btn:first-child {
-    margin-left: 0px;
-}
-
-#pac-input, #number-plate, #vehicle-color, #vehicle-maker, #vehicle-model, #first-name, #phone-number {
-    font-size: 14px;
-    width: 100%;
-    height: 48px;
-    font-family: Arial, Helvetica, Verdana, sans-serif;
-    margin-bottom: 10px;
 }
 
 #map {
@@ -675,14 +615,10 @@ btn-group-vertical > .btn-group:after, .btn-toolbar:after, .clearfix:after, .con
 
 .form-group label {
     font-weight: normal;
-    margin-bottom: 10px;
+    margin-bottom: 8px;
     font-size: 15px;
     font-family: "NewTransport-Regular", Arial, Helvetica, Verdana, sans-serif;
     color: #1d1d1d;
-}
-
-.form-control {
-    font-size: 1.6rem;
 }
 
 .form-group input.form-control {
@@ -703,10 +639,6 @@ btn-group-vertical > .btn-group:after, .btn-toolbar:after, .clearfix:after, .con
     -webkit-transition: border-color ease-in-out 0.15s, -webkit-box-shadow ease-in-out 0.15s;
     -o-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
     transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
-}
-
-.btn-group, .btn-group-vertical {
-    display: inline-block;
 }
 
 .form-group input.form-control:focus {
@@ -749,10 +681,6 @@ btn-group-vertical > .btn-group:after, .btn-toolbar:after, .clearfix:after, .con
     height: 100%;
     width: 100%;
     background-color: transparent;
-}
-
-.col-xs-12 {
-    width: 100%;
 }
 
 #loader {
@@ -825,7 +753,7 @@ btn-group-vertical > .btn-group:after, .btn-toolbar:after, .clearfix:after, .con
 }
 
 #container-userdetails .form-group {
-    /* margin-bottom: 15px; */
+    margin-bottom: 15px;
 }
 
 #container-userdetails .membership-link {
@@ -863,11 +791,6 @@ btn-group-vertical > .btn-group:after, .btn-toolbar:after, .clearfix:after, .con
     margin-right: 0;
 }
 
-.row.formRow2 {
-    margin-left: -7px;
-    margin-right: 0;
-}
-
 .buttons-row {
     margin-top: 20px;
 }
@@ -882,7 +805,6 @@ btn-group-vertical > .btn-group:after, .btn-toolbar:after, .clearfix:after, .con
     margin-bottom: 20px;
     font-size: 18px;
     font-family: 'NewTransport-Bold', Arial, Verdana, sans-serif;
-    font-weight: bold;
     line-height: 24px;
     background: 0;
     border: 0;
@@ -1139,7 +1061,7 @@ btn-group-vertical > .btn-group:after, .btn-toolbar:after, .clearfix:after, .con
 }
 
 .vehicle-prob-box .prob-list {
-    width: 100%;
+    margin: 0 -8px;
 }
 
 .vehicle-prob-box a {
@@ -1260,7 +1182,6 @@ ul.nav-wizard li:after {
 
 ul.nav-wizard li.active {
     font-family: 'NewTransport-Bold', Arial, Verdana, sans-serif;
-    font-weight: bold;
     color: #333;
     background: #fff;
     border-bottom: 2.5px solid #07828d;
@@ -1268,7 +1189,6 @@ ul.nav-wizard li.active {
 
 ul.nav-wizard li.completed {
     font-family: 'NewTransport-Bold', Arial, Verdana, sans-serif;
-    font-weight: bold;
     color: #333;
     background: #fff;
     border-bottom: 2.5px solid #07828d;
@@ -1410,7 +1330,7 @@ ul.nav-wizard.nav-wizard-backnav .active ~ li a:active, ul.nav-wizard.nav-wizard
     #logo {
         position: absolute;
         z-index: 2;
-        background: url(/static/images/logo4.png);
+        background: url(../images/logo.png);
         background-repeat: no-repeat;
         background-size: 178px;
         background-position-x: -92px;
@@ -1470,7 +1390,7 @@ ul.nav-wizard.nav-wizard-backnav .active ~ li a:active, ul.nav-wizard.nav-wizard
     display: inline-block;
     width: 100%;
     min-height: 24px;
-    background-image: url(images/car-pin.svg);
+    background-image: url(../images/car-pin.svg);
     background-repeat: no-repeat;
     background-size: 24px 24px;
     background-position: 0 0;
@@ -1480,7 +1400,7 @@ ul.nav-wizard.nav-wizard-backnav .active ~ li a:active, ul.nav-wizard.nav-wizard
     display: inline-block;
     width: 100%;
     min-height: 24px;
-    background-image: url(images/target.svg);
+    background-image: url(../images/target.svg);
     background-repeat: no-repeat;
     background-size: 24px 24px;
     background-position: 0 0;
@@ -1513,7 +1433,7 @@ ul.nav-wizard.nav-wizard-backnav .active ~ li a:active, ul.nav-wizard.nav-wizard
 }
 
 .hidden-image {
-    background-image: url("images/backBtn.png");
+    background-image: url("../images/backBtn.png");
     display: none;
 }
 
@@ -1548,7 +1468,6 @@ li {
 
 .safety-page h1 {
     font-family: "NewTransport-Bold", Arial, Helvetica, Verdana, sans-serif;
-    font-weight: bold;
     font-size: 24px;
     line-height: 28px;
     letter-spacing: -0.25px;
@@ -1560,7 +1479,6 @@ li {
 
 .safety-page h2 {
     font-family: "NewTransport-Light", Arial, Helvetica, Verdana, sans-serif;
-    font-weight: lighter;
     font-size: 26px;
     line-height: 32px;
     letter-spacing: -0.5px;
@@ -1822,10 +1740,11 @@ form {
 .btn-group.dropdown {
     background: #fff;
     font-size: 16px;
-    box-shadow: 0 0 4px 0 rgba(255, 255, 255, 0);
+    box-shadow: 0 0 4px 0 rgba(167, 169, 172, 0.32);
     -webkit-border-radius: 4px;
     border-radius: 4px;
     font-weight: normal;
+    max-width: 360px;
 }
 
 .btn-group.dropdown .btn-default {
@@ -1912,7 +1831,7 @@ form {
     width: 41px;
     height: 40px;
     position: absolute;
-    background-image: url(/static/images/marker.png);
+    background-image: url(../images/marker.png);
     margin-top: -20px;
 }
 
@@ -2022,7 +1941,6 @@ form {
 
     .safety-page h2 {
         font-family: "NewTransport-Bold", Arial, Helvetica, Verdana, sans-serif;
-        font-weight: bold;
         font-size: 16px;
         line-height: 20px;
         letter-spacing: -0.25px;
@@ -2108,7 +2026,7 @@ form {
     .brokendown {
         display: block;
         float: left;
-        margin-left: 90px;
+        margin-left: 100px;
         text-transform: none;
         font-family: "NewTransport-Bold", Arial, Helvetica, Verdana, sans-serif;
         font-size: 16px;
@@ -2121,16 +2039,15 @@ form {
 /*added for the css update 16aug19*/
 /*user details form*/
 #container-userdetails input.form-control {
-    /* max-width: 360px; */
+    max-width: 360px;
 }
 
 #container-userdetails textarea.form-control {
     max-width: 360px;
 }
 
-textarea.form-control {
-    height: 130px;
-    resize: none;
+#container-userdetails .form-group .btn-full-width {
+    max-width: 140px;
 }
 
 #container-userdetails input.form-control.sort-code {
@@ -2285,7 +2202,6 @@ textarea.form-control {
         text-align: left;
         color: #1d1d1d;
         font-family: "NewTransport-Bold", Arial, Helvetica, Verdana, sans-serif;
-        font-weight: bold;
         margin-top: 0;
         margin-bottom: 16px;
     }
@@ -2385,7 +2301,6 @@ textarea.form-control {
 /*info icons*/
 .input-info-inline {
     font-family: "NewTransport-Italic", Arial, Helvetica, Verdana, sans-serif;
-    font-style: italic;
     font-size: 14px;
     line-height: 20px;
     color: #1d1d1d;
@@ -2395,7 +2310,7 @@ textarea.form-control {
     display: inline-block;
     width: 16px;
     height: 16px;
-    background: url(images/info-icon.svg) no-repeat left center;
+    background: url(../images/info-icon.svg) no-repeat left center;
     background-size: contain;
     position: relative;
     top: 2px;
@@ -2476,13 +2391,12 @@ textarea.form-control {
     display: block;
     margin-left: 50px;
     padding-left: 22px;
-    background-image: url(images/map-info.svg);
+    background-image: url(../images/map-info.svg);
     background-size: 16px 16px;
     background-repeat: no-repeat;
     background-position: 0 2px;
     margin-top: 8px;
     font-family: "NewTransport-Italic", Arial, Helvetica, Verdana, sans-serif;
-    font-style: italic;
 }
 
 .btn {
@@ -2665,42 +2579,29 @@ textarea.form-control {
         display: none;
     }
 }
-
-.btn-check {
-    position: absolute;
-    clip: rect(0, 0, 0, 0);
-    pointer-events: none;
+/*///////////////////////////////*/
+@media (min-width: 992px) {
+    .col-md-6 {
+        width: 50%;
+    }
 }
-
-.btn-check:active + .btn-outline-primary, .btn-check:checked + .btn-outline-primary, .btn-outline-primary.active, .btn-outline-primary.dropdown-toggle.show, .btn-outline-primary:active {
-    color: #fff;
-    background-color: #0d6efd;
-    border-color: #0d6efd;
+@media (min-width: 992px) {
+    .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9 {
+        float: left;
+    }
 }
-
-.bd-example > .btn, .bd-example > .btn-group {
-    margin: .25rem .125rem;
+.col-xs-6 {
+    width: 50%;
 }
-
-.btn-outline-primary {
-    color: #0d6efd;
-    border-color: #0d6efd;
-}
-
-.vehicle-prob-box label {
-    border-radius: 5px;
-    background-color: #fff;
-    border: solid 1px #1d1d1d;
-    letter-spacing: -0.23px;
-    font-size: 14px;
-    text-align: center;
-    color: #1d1d1d;
-    line-height: normal;
-    font-weight: normal;
-    padding: 10px 12px;
-    min-width: 60px;
-    white-space: nowrap;
-    margin: 8px;
+.col-xs-1, .col-xs-10, .col-xs-11, .col-xs-12, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9 {
     float: left;
-    width: auto;
 }
+.col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-xs-1, .col-xs-10, .col-xs-11, .col-xs-12, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+
+/*# sourceMappingURL=styles.css.map */
