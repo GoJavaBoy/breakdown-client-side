@@ -2681,4 +2681,11 @@ input, input:before, input:after {
     -ms-user-select: initial;
     user-select: initial;
 }
+.valid {
+    border: 1px solid green;
+}
+
+.invalid {
+    border: 1px solid red;
+}
 /*# sourceMappingURL=styles.css.map */

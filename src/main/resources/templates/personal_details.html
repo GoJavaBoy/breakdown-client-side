@@ -90,7 +90,9 @@
                                                 class="form-control brk-text-box ng-pristine ng-untouched ng-isolate-scope ng-scope ng-empty ng-invalid ng-invalid-required ng-valid-minlength ng-valid-maxlength"
                                                 ng-maxlength="100"
                                                 maxlength="100"
-                                                type="text"
+                                                type="tel"
+                                                data-rules="tel"
+                                                name="tel"
                                                 placeholder="+37061307109"
                                         />
                                     </div>
@@ -123,9 +125,10 @@
                                     </div>
                                     <div class="row">
                                         <div class="col-md-12 col-xs-12">
+<!--                                            Остановился здесь!-->
                                             <button type="submit"
                                                     class="btn-start btn-full-width user-details-btn ng-scope"
-                                                    onclick="getPersonalDetails()"
+                                                    onclick="ValidPhone(); getPersonalDetails()"
                                                     style="max-width: 100%">
                                                 Siųsti
                                             </button>
