@@ -6,9 +6,7 @@ import org.springframework.context.annotation.ComponentScan;
 
 @SpringBootApplication
 public class BreakdownApplication {
-
     public static void main(String[] args) {
         SpringApplication.run(BreakdownApplication.class, args);
     }
-
 }
