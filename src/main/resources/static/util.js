@@ -55,6 +55,7 @@ function getVehicleDetails() {
 }
 
 function getPersonalDetails() {
+
     var name = document.getElementById("first-name").value;
     var phoneNumber = document.getElementById("phone-number").value;
     var commentText = document.getElementById("text-area").value;
@@ -82,17 +83,31 @@ function getPersonalDetails() {
         + "Адресс: " + localStorage.getItem("humanAddress") + "%0A"
         + "%0A"
         + "На карте:%0A", false);
-    xhr.send();
+    // xhr.send();
 
     var xhr2 = new XMLHttpRequest();
     xhr2.open('GET', 'https://api.telegram.org/bot1684613071:AAGYMCdPLof7JB_U0hKtM1psvKLhhqejuZE/sendLocation?chat_id=@emergency_breakdown&latitude='
         + localStorage.getItem("latitude") + '&longitude=' + localStorage.getItem("longtude"), false);
-    xhr2.send();
+    // xhr2.send();
 
-    // xhr.onload = function () {
-    //     // do something to response
-    //     //    console.log(this.responseText);
-    // };
+    $.post('http://localhost:8080/consumer/newOrder', {
+        phoneNumber: localStorage.getItem("phoneNumber"),
+        comment: [
+            "Неисправности: " + localStorage.getItem("problems"),
+            "Примечание клиента: " + localStorage.getItem("commentText"),
+            "Марка машины: " + localStorage.getItem("maker"),
+            "Модель: " + localStorage.getItem("model"),
+            "Цвет: " + localStorage.getItem("color"),
+            "Номер: " + localStorage.getItem("numberPlate")
+        ],
+        pointA: 'https://www.google.co.uk/maps/dir/' + localStorage.getItem("latitude") + ',' + localStorage.getItem("longtude"),
+        price: 0,
+        status: 'PENDING',
+        distance: 0
+
+    }, function(response){
+        alert("success");
+    });
 }
 
 
@@ -139,6 +154,6 @@ function ValidPhone() {
     var valid = re.test(myPhone);
     if (valid) output = 'Номер телефона введен правильно!';
     else alert("ADASd")// output = 'Номер телефона введен неправильно!';
-    document.getElementById('message').innerHTML = document.getElementById('message').innerHTML+'<br />'+output;
+    document.getElementById('message').innerHTML = document.getElementById('message').innerHTML + '<br />' + output;
     return valid;
 }
