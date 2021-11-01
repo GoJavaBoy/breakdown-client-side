@@ -1,15 +1,11 @@
 package com.pigustralas.breakdown.controllers;
 
-//import com.pigustralas.breakdown.models.Address;
-//import com.pigustralas.breakdown.repo.BreakdownRepo;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.*;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
 
 @Controller
 public class MainController {
-//    @Autowired
-//    private BreakdownRepo breakdownRepo;
 
     @GetMapping("/index")
     public String showMainPage() {
@@ -19,6 +15,11 @@ public class MainController {
     @GetMapping("/right_place")
     public String showRightPlacePage() {
         return "map_page";
+    }
+
+    @GetMapping("/drop_off_place")
+    public String showDropOffPlacePage() {
+        return "drop_off_map_page";
     }
 
     @GetMapping("/address_manual")
@@ -56,15 +57,8 @@ public class MainController {
         return "problem";
     }
 
-    @GetMapping("/testMap")
-    public String tesMap() {
-        return "test";
-    }
-
     @GetMapping("/successful")
     public String getSuccessfulPage() {
         return "successful_page";
     }
-
-
 }

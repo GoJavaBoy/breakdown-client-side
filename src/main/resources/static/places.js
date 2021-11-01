@@ -23,13 +23,5 @@ function initAutocomplete() {
         latLng = place.geometry.location;
         localStorage.setItem("lat", latLng.lat());
         localStorage.setItem("lng", latLng.lng());
-        // var xhr = new XMLHttpRequest();
-        // xhr.open('POST', 'http://localhost:8080/places_test', true);
-        // xhr.setRequestHeader('Content-type', 'application/json');
-        // xhr.onload = function () {
-        //     // do something to response
-        //     console.log(this.responseText);
-        // };
-        // xhr.send(JSON.stringify(latLng));
     }
 }

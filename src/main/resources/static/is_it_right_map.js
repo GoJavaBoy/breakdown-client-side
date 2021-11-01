@@ -49,7 +49,6 @@ function initMap() {
 
             xhr.onload = function () {
                 // do something to response
-              //  console.log(this.responseText);
             };
             xhr.send(JSON.stringify(humanAddress));
         } else {

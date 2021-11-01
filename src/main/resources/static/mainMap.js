@@ -46,7 +46,6 @@ function handleLocationError(browserHasGeolocation, infoWindow, pos) {
 
 function geocodeAddress(geocoder, resultsMap, lat, lang) {
     const address = lat + "," + lang;
-    // alert(lat + "," + lang);
     geocoder.geocode({address: address}, (results, status) => {
         if (status === "OK") {
             var location = results[0].geometry.location;
@@ -81,7 +80,6 @@ function geocodeAddress(geocoder, resultsMap, lat, lang) {
 
             //When moving marker, get the new coords from marker, decode and show on the page using @innerHTML
             google.maps.event.addListener(marker, "drag", function () {
-                // console.log(marker.getPosition().lat() + " " + marker.getPosition().lng());
                 const address_after_moving = marker.getPosition().lat() + "," + marker.getPosition().lng();
 
                 geocoder.geocode({address: address_after_moving}, (results_after_moving, status_after_moving) => {
@@ -97,7 +95,6 @@ function geocodeAddress(geocoder, resultsMap, lat, lang) {
                 });
 
             });
-            //    alert(results[0].formatted_address);
             //Send POST request with Human Address body
             var xhr = new XMLHttpRequest();
             xhr.open('POST', 'http://localhost:8080/right_place', true);
@@ -105,7 +102,6 @@ function geocodeAddress(geocoder, resultsMap, lat, lang) {
             xhr.setRequestHeader('coordinates', results[0].geometry.location)
             xhr.onload = function () {
                 // do something to response
-            //    console.log(this.responseText);
             };
             xhr.send(JSON.stringify(humanAddress));
         } else {

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Pranešti apie transporto priemonės gedimą</title>
+    <title>Report a vehicle break down</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
           integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="/static/style.css"/>
@@ -25,12 +25,12 @@
     <header>
         <div class="brand">
             <div id="logo"></div>
-            <div class="brokendown">Pagalba kelyje</div>
+            <div class="brokendown">Breakdown service</div>
             <div class="steps-indicator ng-scope" ng-if="ctrl.showSteps()">
                 <a class="pointer ng-binding" ng-click="ctrl.toggleStepsVisiblity()" ng-class="{'active':ctrl.getStepsVisiblity()}" data-di-id="di-id-90b1ccb4-78094daf" style="">
-                    Žingsnis
+                    Step
                     <span class="cur-step ng-binding">3</span>
-                    <span class="step-amt">iš</span>
+                    <span class="step-amt">of</span>
                     5
                 </a>
             </div>
@@ -41,19 +41,19 @@
         <div class="nav-wizWrap mobile-view">
             <ul class="nav-wizard">
                 <li class="pointer ng-binding ng-scope completed" data-getmenuindex="1" style="">
-                    Saugumas
+                    Safety
                 </li>
                 <li class="pointer ng-binding ng-scope completed" data-getmenuindex="2" style="">
-                    Buvimo vieta
+                    Location
                 </li>
                 <li class="pointer ng-binding ng-scope active" data-getmenuindex="3" style="">
-                    Transporto priemonė
+                    Vehicle info
                 </li>
                 <li class="pointer ng-binding ng-scope inactive" data-getmenuindex="4" style="">
-                    Problema
+                    Problem
                 </li>
                 <li class="pointer ng-binding ng-scope inactive" data-getmenuindex="5" style="">
-                    Detalės
+                    Details
                 </li>
             </ul>
         </div>
@@ -63,7 +63,7 @@
             <div class="box address_manual">
                 <div class="row">
                     <div class="col-md-12 col-xs-12">
-                        <h1 class="ng-binding">Duomenys apie transporto priemonę</h1>
+                        <h1 class="ng-binding">Info about vehicle</h1>
                     </div>
                 </div>
                 <div class="row">
@@ -71,7 +71,7 @@
                         <div class="form-group">
                             <div class="btn-group dropdown" style="width:100%">
                                 <form method="get" action="/problem">
-                                    <label for="number-plate">Numeris</label>
+                                    <label for="number-plate">Plate number</label>
                                     <div class="form-group">
                                         <input
                                                 id="number-plate"
@@ -82,7 +82,7 @@
                                                 placeholder="EMK 753"
                                         />
                                     </div>
-                                    <label for="vehicle-color">Spalva</label>
+                                    <label for="vehicle-color">Color</label>
                                     <div class="form-group">
                                         <input
                                                 id="vehicle-color"
@@ -90,10 +90,10 @@
                                                 ng-maxlength="100"
                                                 maxlength="100"
                                                 type="text"
-                                                placeholder="Pilka"
+                                                placeholder="Silver"
                                         />
                                     </div>
-                                    <label for="vehicle-maker">Gamintojas</label>
+                                    <label for="vehicle-maker">Manufacturer</label>
                                     <div class="form-group">
                                         <input
                                                 id="vehicle-maker"
@@ -104,7 +104,7 @@
                                                 placeholder="BMW"
                                         />
                                     </div>
-                                    <label for="vehicle-model">Modelis</label>
+                                    <label for="vehicle-model">Model</label>
                                     <div class="form-group">
                                         <input
                                                 id="vehicle-model"
@@ -120,12 +120,12 @@
                                             <button type="submit"
                                                     class="btn-full-secondary ng-scope ng-binding"
                                             onclick="getVehicleDetails()">
-                                                Patvirtinti
+                                                Confirm
                                             </button>
                                         </div>
                                         <div class="col-md-12 col-xs-12 address-row">
                                             <p>
-                                                <a href="personal_details" class="ng-binding">Neturite šios informacijos?</a>
+                                                <a href="personal_details" class="ng-binding">Don't have this information?</a>
                                             </p>
                                         </div>
                                     </div>
@@ -137,9 +137,9 @@
             </div>
             <div class="container-fluid report-footer">
                 <div class="row">
-                    <button class="prev ng-scope" onclick="rightUrl_VehicleDetails()">
+                    <button class="prev ng-scope" onclick="document.location='drop_off_place'">
                         <img alt src="/static/images/backBtn.png">
-                        <span>Atgal</span>
+                        <span>Back</span>
                     </button>
                 </div>
             </div>

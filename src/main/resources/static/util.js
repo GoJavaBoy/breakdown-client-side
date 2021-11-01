@@ -10,7 +10,7 @@ function addressNotOnTheListClick() {
     localStorage.setItem("address_not_on_the_list", "true");
 }
 
-function rightUrl_VehicleDetails() {
+function rightUrl_DropOffPage() {
     if (localStorage.getItem("do_you_know_address_visit") === "true") {
         document.location = "do_you_know_address";
     } else {
@@ -100,16 +100,20 @@ function getPersonalDetails() {
             "Цвет: " + localStorage.getItem("color"),
             "Номер: " + localStorage.getItem("numberPlate")
         ],
-        pointA: 'https://www.google.co.uk/maps/dir/' + localStorage.getItem("latitude") + ',' + localStorage.getItem("longtude"),
-        price: 0,
+        pointA: 'https://www.google.co.uk/maps/dir/' + localStorage.getItem("latitude") + ',' + localStorage.getItem("longtude")
+            + '/' + localStorage.getItem("drop_latitude") + ',' + localStorage.getItem("drop_longtude"),
+        price: Math.round(calculatePrice()),
         status: 'PENDING',
-        distance: 0
+        distance: Math.round(localStorage.getItem("distance"))
 
     }, function(response){
-        alert("success");
     });
 }
 
+function calculatePrice(){
+    var distance = localStorage.getItem("distance")
+    return (distance - 5) * 1.2 + 30;
+}
 
 $(document).ready(function () {
     function progress(timeleft, timetotal, $element) {
