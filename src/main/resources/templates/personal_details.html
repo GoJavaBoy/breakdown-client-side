@@ -16,9 +16,10 @@
             integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
             crossorigin="anonymous"></script>
     <script>
-        // user_id = Number(Math.random() * 1000);
-        // console.log("user_id: " + user_id);
-        // localStorage.setItem("user_id", user_id);
+        $("#send").on("click", function(event){
+            event.preventDefault();
+            getPersonalDetails();
+        });
         if (performance.navigation.type === performance.navigation.TYPE_RELOAD
             || localStorage.getItem("user_id") === null) {
             console.info("This page is reloaded");
@@ -146,6 +147,7 @@
                                         <div class="col-md-12 col-xs-12">
 <!--                                            Остановился здесь!-->
                                             <button type="submit"
+                                                    id="send"
                                                     class="btn-start btn-full-width user-details-btn ng-scope"
                                                     onclick="getPersonalDetails()"
                                                     style="max-width: 100%">
