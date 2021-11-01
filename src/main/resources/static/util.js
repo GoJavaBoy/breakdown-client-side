@@ -118,7 +118,7 @@ function calculatePrice(){
 $(document).ready(function () {
     function progress(timeleft, timetotal, $element) {
         var progressBarWidth = timeleft * $element.width() / timetotal;
-        $element.find('div').animate({width: progressBarWidth}, timeleft === timetotal ? 0 : 1000, 'linear').html("paskambinsime po " + timeleft);
+        $element.find('div').animate({width: progressBarWidth}, timeleft === timetotal ? 0 : 1000, 'linear').html("call you after " + timeleft);
         if (timeleft > 0) {
             setTimeout(function () {
                 progress(timeleft - 1, timetotal, $element);

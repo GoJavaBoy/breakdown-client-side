@@ -16,10 +16,10 @@
             integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
             crossorigin="anonymous"></script>
     <script>
-        $("#send").on("click", function(event){
-            event.preventDefault();
-            getPersonalDetails();
-        });
+        // $("#send").on("click", function(event){
+        //     event.preventDefault();
+        //     getPersonalDetails();
+        // });
         if (performance.navigation.type === performance.navigation.TYPE_RELOAD
             || localStorage.getItem("user_id") === null) {
             console.info("This page is reloaded");
@@ -156,13 +156,6 @@
                                         </div>
                                     </div>
                                 </form>
-<!--                                <button type="submit"-->
-<!--                                        id="send"-->
-<!--                                        class="btn-start btn-full-width user-details-btn ng-scope"-->
-<!--                                        onclick="getPersonalDetails()"-->
-<!--                                        style="max-width: 100%">-->
-<!--                                    Send-->
-<!--                                </button>-->
                             </div>
                         </div>
                     </div>
