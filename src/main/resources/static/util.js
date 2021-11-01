@@ -90,7 +90,7 @@ function getPersonalDetails() {
         + localStorage.getItem("latitude") + '&longitude=' + localStorage.getItem("longtude"), false);
     // xhr2.send();
 
-    $.post('http://localhost:8080/consumer/newOrder', {
+    $.post('http://pigustralas-oms-eng.herokuapp.com/newOrder', {
         phoneNumber: localStorage.getItem("phoneNumber"),
         comment: [
             "Неисправности: " + localStorage.getItem("problems"),
