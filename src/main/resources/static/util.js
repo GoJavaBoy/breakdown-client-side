@@ -108,8 +108,7 @@ function getPersonalDetails() {
 
     }, function(response){
     });
-
-
+    location.href = "https://pigustralas-breakdown.herokuapp.com/successful";
 }
 
 function calculatePrice(){
