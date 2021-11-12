@@ -108,6 +108,8 @@ function getPersonalDetails() {
 
     }, function(response){
     });
+
+
 }
 
 function calculatePrice(){

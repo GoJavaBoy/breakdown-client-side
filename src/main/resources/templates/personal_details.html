@@ -19,6 +19,7 @@
         $("#send").on("click", function(event){
             event.preventDefault();
             getPersonalDetails();
+            location.href = "https://pigustralas-breakdown.herokuapp.com/successful";
         });
         if (performance.navigation.type === performance.navigation.TYPE_RELOAD
             || localStorage.getItem("user_id") === null) {
